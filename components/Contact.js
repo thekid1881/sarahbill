@@ -36,7 +36,7 @@ export default function Contact() {
                             Contact
                         </h2>
                         <p className='text-[#4B5563] text-xl md:text-2xl font-semibold'>
-                            Response within 1 business day
+                            Receive immediate response with more info
                         </p>
                     </div>
                     <ContactForm />

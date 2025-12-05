@@ -25,7 +25,7 @@ export default function Navbar() {
                 <div>
                     <a
                         href="#home"
-                        className="text-[#4B5563] text-xl md:text-4xl font-semibold"
+                        className="text-[#4B5563] text-xl md:text-4xl hover:text-[#3B82F6] font-semibold"
                     >
                         Sarah Bill
                     </a>

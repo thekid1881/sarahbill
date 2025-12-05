@@ -2,7 +2,7 @@
 
 import { useRef, useEffect, useState } from 'react';
 import FlipCard from './FlipCard';
-import Link from "next/link";
+import { LuMousePointerClick } from "react-icons/lu";
 
 export default function Offerings() {
     const ref = useRef();
@@ -45,8 +45,8 @@ export default function Offerings() {
                                             <p className='text-lg'>Visual branding, CTAs, modern design</p>
                                         </div>
                                         <div className='row-start-2'>
-                                            <p className='text-xl font-semibold'>Webiste Refresh</p>
-                                            <p className='text-lg'>Bug fixes, mobile-friendly, tool updates</p>
+                                            <p className='text-xl font-semibold'>Website Refresh</p>
+                                            <p className='text-lg'>Bug fixes, responsiveness, tool updates</p>
                                         </div>
                                         <div className='row-start-3'>
                                             <p className='text-xl font-semibold'>Design to Code Conversion</p>
@@ -110,12 +110,13 @@ export default function Offerings() {
                             />
                         </div>
                         <div className="relative h-screen md:hidden flex flex-col items-center justify-between gap-4">
-                            <div className='sticky top-48 z-50 flex justify-center'>
+                            <div className='sticky top-20 z-50 flex justify-center'>
                                 <a
                                     href="#contact"
-                                    className="py-4 px-6 rounded-md bg-blue-600 font-semibold text-white text-lg"
+                                    className="flex flex-row py-4 px-6 rounded-md bg-blue-600 font-semibold text-white text-lg"
                                 >
-                                    Message for More
+                                    <LuMousePointerClick />
+                                    <p className='ml-2'>Message for More</p>
                                 </a>
                             </div>
                             <FlipCard

@@ -50,10 +50,10 @@ export default function ContactForm() {
             type="text"
             placeholder="Full Name"
             autoComplete="false"
-            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-800 focus:ring-4  ${
+            className={`w-full px-4 py-3 border-2 text-white rounded-md outline-none placeholder:text-gray-200 bg-gray-800 focus:ring-4  ${
               errors.name
-                ? "border-yellow-300 focus:border-yellow-300 ring-red-100 dark:ring-0"
-                : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                ? "border-yellow-200 focus:border-yellow-200 ring-yellow-300 ring-0"
+                : "ring-gray-100 border-gray-600 focus:border-white ring-0"
             }`}
             {...register("name", {
               required: "Full name is required",
@@ -61,7 +61,7 @@ export default function ContactForm() {
             })}
           />
           {errors.name && (
-            <div className="mt-1 text-yellow-300 text-xl font-bold">
+            <div className="mt-1 text-yellow-300 text-xl font-semibold">
               {errors.name.message}
             </div>
           )}
@@ -77,10 +77,10 @@ export default function ContactForm() {
             placeholder="Email Address"
             name="email"
             autoComplete="false"
-            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-800   focus:ring-4  ${
+            className={`w-full px-4 py-3 border-2 text-white rounded-md outline-none placeholder:text-gray-200 bg-gray-800   focus:ring-4  ${
               errors.email
-                ? "border-yellow-300 focus:border-yellow-300 ring-red-100 dark:ring-0"
-                : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                ? "border-yellow-200 focus:border-yellow-200 ring-yellow-300 ring-0"
+                : "ring-gray-100 border-gray-600 focus:border-white ring-0"
             }`}
             {...register("email", {
               required: "Enter your email",
@@ -91,7 +91,7 @@ export default function ContactForm() {
             })}
           />
           {errors.email && (
-            <div className="mt-1 text-yellow-300 text-xl font-bold">
+            <div className="mt-1 text-yellow-300 text-xl font-semibold">
               {errors.email.message}
             </div>
           )}
@@ -101,17 +101,17 @@ export default function ContactForm() {
           <textarea
             name="message"
             placeholder="Short description of your needs"
-            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-800   rounded-md outline-none  h-36 focus:ring-4  ${
+            className={`w-full px-4 py-3 border-2 text-white placeholder:text-gray-200 bg-gray-800   rounded-md outline-none  h-36 focus:ring-4  ${
               errors.message
-                ? "border-yellow-300 focus:border-yellow-300 ring-red-100 dark:ring-0"
-                : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                ? "border-yellow-200 focus:border-yellow-200 ring-yellow-300 ring-0"
+                : "ring-gray-100 border-gray-600 focus:border-white ring-0"
             }`}
             {...register("message", {
               required: "Enter your Message",
             })}
           />
           {errors.message && (
-            <div className="mt-1 text-yellow-300 text-xl font-bold">
+            <div className="mt-1 text-yellow-300 text-xl font-semibold">
               {" "}
               {errors.message.message}
             </div>
@@ -120,10 +120,10 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="w-full py-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-300 hover:cursor-pointer focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black ">
+          className="w-full py-4 font-semibold transition-colors rounded-md hover:bg-gray-300 hover:cursor-pointer focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 bg-white text-black ">
           {isSubmitting ? (
             <svg
-              className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
+              className="w-5 h-5 mx-auto text-black animate-spin"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24">
@@ -146,12 +146,12 @@ export default function ContactForm() {
       </form>
 
       {isSubmitSuccessful && isSuccess && (
-        <div className="mt-3 text-2xl text-center text-white font-bold">
+        <div className="mt-3 text-2xl text-center text-black font-semibold">
           {message || "Message sent successfully"}
         </div>
       )}
       {isSubmitSuccessful && !isSuccess && (
-        <div className="mt-3 text-sm text-center text-red-500">
+        <div className="mt-3 text-sm text-center text-orange-400">
           {message || "Something went wrong. Please try later."}
         </div>
       )}
