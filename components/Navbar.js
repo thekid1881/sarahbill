@@ -38,6 +38,12 @@ export default function Navbar() {
                         Offerings
                     </a>
                     <a
+                        href="#about"
+                        className="text-[#4B5563] font-semibold text-lg md:text-2xl hover:text-[#3B82F6] transition-colors"
+                    >
+                        About
+                    </a>
+                    <a
                         href="#contact"
                         className="text-[#4B5563] font-semibold text-lg md:text-2xl hover:text-[#3B82F6] transition-colors"
                     >

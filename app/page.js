@@ -2,6 +2,7 @@ import Contact from "@/components/Contact";
 import Offerings from "@/components/Offerings";
 import Navbar from "@/components/Navbar";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <ScrollIndicator />
         </section>
         <Offerings />
+        <About />
         <Contact />
       </main>
     </>

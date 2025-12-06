@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function FlipCard({ frontContent, backContent }) {
+export default function FlipCardOne({ frontContent, backContent }) {
     const [flipped, setFlipped] = useState(false);
 
     return (

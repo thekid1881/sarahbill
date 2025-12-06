@@ -1,8 +1,9 @@
 'use client';
 
 import { useRef, useEffect, useState } from 'react';
-import FlipCard from './FlipCard';
+import FlipCardOne from './FlipCardOne';
 import { LuMousePointerClick } from "react-icons/lu";
+import FlipCardTwo from './FlipCardTwo';
 
 export default function Offerings() {
     const ref = useRef();
@@ -36,7 +37,7 @@ export default function Offerings() {
                             Offerings
                         </h2>
                         <div className="hidden md:grid grid-cols-3 gap-8 justify-center items-center">
-                            <FlipCard
+                            <FlipCardOne
                                 frontContent={<p className='text-2xl font-semibold'>Website Development</p>}
                                 backContent={<div className='grid grid-cols-[fr2_fr1] gap-4 p-4'>
                                     <div className='col-start-1 grid grid-rows-3 gap-4'>
@@ -60,7 +61,7 @@ export default function Offerings() {
                                     </div>
                                 </div>}
                             />
-                            <FlipCard
+                            <FlipCardOne
                                 frontContent={<p className='text-2xl font-semibold'>Data Analysis</p>}
                                 backContent={<div className='grid grid-cols-[fr2_fr1] gap-4 p-4'>
                                     <div className='col-start-1 grid grid-rows-3 gap-4'>
@@ -84,27 +85,27 @@ export default function Offerings() {
                                     </div>
                                 </div>}
                             />
-                            <FlipCard
-                                frontContent={<p className='text-2xl font-semibold'>Transcription</p>}
+                            <FlipCardTwo
+                                frontContent={<p className='text-2xl font-semibold'>How Does It Work?</p>}
                                 backContent={<div className='grid grid-cols-[fr2_fr1] gap-4 p-4'>
                                     <div className='col-start-1 grid grid-rows-3 gap-4'>
                                         <div className='row-start-1'>
-                                            <p className='text-xl font-semibold'>Meeting Notes</p>
-                                            <p className='text-lg'>Key points, decisions, actions, speakers</p>
+                                            <p className='text-xl font-semibold'>Contact Me</p>
+                                            <p className='text-lg'>Fill out the contact form below</p>
                                         </div>
                                         <div className='row-start-2'>
-                                            <p className='text-xl font-semibold'>Podcast Episodes</p>
-                                            <p className='text-lg'>Full dialogue, natural flow and structure</p>
+                                            <p className='text-xl font-semibold'>Intake Survey</p>
+                                            <p className='text-lg'>Complete a short intake survey</p>
                                         </div>
                                         <div className='row-start-3'>
-                                            <p className='text-xl font-semibold'>YouTube Videos</p>
-                                            <p className='text-lg'>Verbatim, caption-ready, SEO script</p>
+                                            <p className='text-xl font-semibold'>Receive Quote</p>
+                                            <p className='text-lg'>Get a quote for scope and timing</p>
                                         </div>
                                     </div>
                                     <div className='col-start-2 grid grid-rows-3'>
-                                        <div className='row-start-1 text-xl font-semibold'>$60</div>
-                                        <div className='row-start-2 text-xl font-semibold'>$105</div>
-                                        <div className='row-start-3 text-xl font-semibold'>$160</div>
+                                        <div className='row-start-1 text-xl font-semibold'>1min</div>
+                                        <div className='row-start-2 text-xl font-semibold'>5min</div>
+                                        <div className='row-start-3 text-xl font-semibold'>1hr</div>
                                     </div>
                                 </div>}
                             />
@@ -119,7 +120,7 @@ export default function Offerings() {
                                     <p className='ml-2'>Message for More</p>
                                 </a>
                             </div>
-                            <FlipCard
+                            <FlipCardOne
                                 frontContent={<p className='text-xl font-semibold'>Websites</p>}
                                 backContent={<ul className='text-xl font-semibold list-disc'>
                                     <li>Landing Page</li>
@@ -127,7 +128,7 @@ export default function Offerings() {
                                     <li>Design to Code</li>
                                 </ul>}
                             />
-                            <FlipCard
+                            <FlipCardOne
                                 frontContent={<p className='text-xl font-semibold'>Data Analysis</p>}
                                 backContent={<ul className='text-xl font-semibold list-disc'>
                                     <li>Data Cleanup</li>
@@ -135,12 +136,12 @@ export default function Offerings() {
                                     <li>Visualization</li>
                                 </ul>}
                             />
-                            <FlipCard
-                                frontContent={<p className='text-xl font-semibold'>Transcription</p>}
+                            <FlipCardTwo
+                                frontContent={<p className='text-xl font-semibold'>How?</p>}
                                 backContent={<ul className='text-xl font-semibold list-disc'>
-                                    <li>Meeting Notes</li>
-                                    <li>Podcasts</li>
-                                    <li>YouTube</li>
+                                    <li>Contact Me</li>
+                                    <li>Intake Survey</li>
+                                    <li>Get a Quote</li>
                                 </ul>}
                             />
                         </div>
