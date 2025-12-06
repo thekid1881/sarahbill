@@ -17,7 +17,7 @@ export default function Home() {
             Sarah Bill
           </h1>
           <p className="leading-relaxed text-[#4B5563] text-xl md:text-4xl font-semibold">
-            Websites, Data Analysis, and Transcription
+            Website and Data Analytics Services
           </p>
           <ScrollIndicator />
         </section>

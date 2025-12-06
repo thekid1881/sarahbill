@@ -99,13 +99,13 @@ export default function Offerings() {
                                         </div>
                                         <div className='row-start-3'>
                                             <p className='text-xl font-semibold'>Receive Quote</p>
-                                            <p className='text-lg'>Get a quote for scope and timing</p>
+                                            <p className='text-lg'>Get a <strong>FREE</strong> quote for scope and timing</p>
                                         </div>
                                     </div>
                                     <div className='col-start-2 grid grid-rows-3'>
-                                        <div className='row-start-1 text-xl font-semibold'>1min</div>
-                                        <div className='row-start-2 text-xl font-semibold'>5min</div>
-                                        <div className='row-start-3 text-xl font-semibold'>1hr</div>
+                                        <div className='row-start-1 text-xl font-semibold'>1 min</div>
+                                        <div className='row-start-2 text-xl font-semibold'>5 min</div>
+                                        <div className='row-start-3 text-xl font-semibold'>1 hr</div>
                                     </div>
                                 </div>}
                             />

@@ -35,8 +35,8 @@ export default function Contact() {
                         <h2 className="leading-relaxed text-[#1F2937] text-3xl md:text-6xl font-semibold">
                             Contact
                         </h2>
-                        <p className='text-[#4B5563] text-xl md:text-2xl font-semibold'>
-                            Receive an email with more info
+                        <p className='text-blue-600 leading-relaxed text-xl md:text-2xl font-semibold'>
+                            Receive a FREE quote
                         </p>
                     </div>
                     <ContactForm />
